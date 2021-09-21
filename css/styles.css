@@ -1,26 +1,25 @@
 /*****************************************
-Table Of Contents:
+Tabla de Contenido
 
-01. General Styles
-02. Preloader
-03. Navigation
+01. Estilos Generales
+02. Barra de Carga
+03. Navegación
 04. Header
-05. Intro
-06. Description
-07. Details 1
-08. Details 2
-09. Galey
-10. Project Lightboxes
-11. Contact
+05. Introduccion
+06. Descripcion
+07. Detalles 1
+08. Detalles 2
+09. Galeria
+10. Modal de Galeria 
+11. Contacto
 12. Footer
 13. Copyright
-14. Back To Top Button
-15. Extra Pages
-16. Media Queries
+14. Boton Regreso al Inicio
+16. Queries
 ******************************************/
 
 /*****************************************
-Colors:
+Colores:
 
 - Backgrounds - light gray #fbfbfb
 - Background - dark blue  #008080
@@ -33,7 +32,7 @@ Colors:
 
 
 /******************************/
-/*     01. General Styles     */
+/*     01.Estilos Generales   */
 /******************************/
 body,
 html {
@@ -141,9 +140,9 @@ strong {
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.1875rem 1.875rem 1.1875rem 1.875rem;
-	border: 0.125rem solid #efb810;
+	border: 0.125rem solid #14bf98;
 	border-radius: 0.25rem;
-	background-color: #efb810;
+	background-color: #14bf98;
 	color: #fff;
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
@@ -152,16 +151,16 @@ strong {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #efb810;
+	color: #14bf98;
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.375rem 2.125rem 1.375rem 2.125rem;
-	border: 0.125rem solid #efb810;
+	border: 0.125rem solid #14bf98;
 	border-radius: 0.25rem;
-	background-color: #efb810;
+	background-color: #14bf98;
 	color: #fff;
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
 	text-decoration: none;
@@ -170,7 +169,7 @@ strong {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #efb810;
+	color: #14bf98;
 	text-decoration: none;
 }
 
@@ -222,11 +221,6 @@ strong {
 	transition: all 0.2s;
 }
 
-.btn-outline-sm:hover {
-	background-color: #787976;
-	color: #fff;
-	text-decoration: none;
-}
 
 .form-group {
 	position: relative;
@@ -314,7 +308,7 @@ select {
 	-ms-appearance: none;
     -o-appearance: none;
     appearance: none;
-    background-image: url('../images/down-arrow.png');
+    background-image: url('../images/flecha-abajo.png');
     background-position: 96% 50%;
     background-repeat: no-repeat;
     outline: none;
@@ -1047,6 +1041,21 @@ input[type='checkbox'] {
 	margin-top: 1.75rem;
 	margin-bottom: 0;
 	vertical-align: top;
+}
+
+.list-unstyled .media {
+	margin-bottom: 2rem;
+}
+
+.list-unstyled .media-bullet {
+	color: #efb810;
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+.list-unstyled .media-body {
+	margin-left: 0.875rem;
 }
 
 .tabs #tab-1 .list-unstyled .media {
