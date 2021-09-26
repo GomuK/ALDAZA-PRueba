@@ -1,3 +1,9 @@
+/* Template: Aria - Business HTML Landing Page Template
+   Author: Inovatik
+   Created: Jul 2019
+   Description: Custom JS file
+*/
+
 /*****************************************
 Tabla de Contenido
 
@@ -5,7 +11,7 @@ Tabla de Contenido
 02. Barra de Carga
 03. Navegación
 04. Header
-05. Introduccion
+05. Introducción
 06. Descripcion
 07. Detalles 1
 08. Detalles 2
@@ -246,7 +252,6 @@ strong {
 	transition: all 0.2s ease;
 }
 
-/* IE10+ hack to solve lower label text position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
 	.label-control {
 		top: 0.9375rem;
@@ -265,7 +270,7 @@ strong {
 
 .form-control-input,
 .form-control-select {
-	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
+	display: block; 
 	width: 100%;
 	padding-top: 1.25rem;
 	padding-bottom: 0.25rem;
@@ -276,7 +281,7 @@ strong {
 	color: #787976;
 	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
 	transition: all 0.2s;
-	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+	-webkit-appearance: none; 
 }
 
 .form-control-select {
@@ -285,7 +290,6 @@ strong {
 	height: 3rem;
 }
 
-/* IE10+ hack to solve lower label text position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
 	.form-control-input {
 		padding-top: 1.25rem;
@@ -302,7 +306,6 @@ strong {
 }
 
 select {
-    /* you should keep these first rules in place to maintain cross-browser behavior */
     -webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
@@ -315,13 +318,13 @@ select {
 }
 
 select::-ms-expand {
-    display: none; /* removes the ugly default down arrow on select form field in IE11 */
+    display: none;
 }
 
 .form-control-textarea {
-	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+	display: block; 
 	width: 100%;
-	height: 8rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+	height: 8rem; 
 	padding-top: 1.25rem;
 	padding-left: 1.3125rem;
 	border: 1px solid #dadada;
@@ -336,7 +339,7 @@ select::-ms-expand {
 .form-control-select:focus,
 .form-control-textarea:focus {
 	border: 1px solid #a1a1a1;
-	outline: none; /* Removes blue border on focus */
+	outline: none; 
 }
 
 .form-control-input:hover,
@@ -354,7 +357,6 @@ input[type='checkbox'] {
 	margin-right: 0.375rem;
 }
 
-/* IE10+ hack to raise checkbox field position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
 	input[type='checkbox'] {
 		vertical-align: -9%;
@@ -379,7 +381,6 @@ input[type='checkbox'] {
 	color: #efb810;
 }
 
-/* Form Success And Error Message Formatting */
 #lmsgSubmit.h3.text-center.tada.animated,
 #cmsgSubmit.h3.text-center.tada.animated,
 #pmsgSubmit.h3.text-center.tada.animated,
@@ -402,9 +403,7 @@ input[type='checkbox'] {
 .help-block.with-errors ul {
 	margin-bottom: 0;
 }
-/* end of form success and error message formatting */
 
-/* Form Success And Error Message Animation - Animate.css */
 @-webkit-keyframes tada {
 	from {
 		-webkit-transform: scale3d(1, 1, 1);
@@ -472,10 +471,8 @@ input[type='checkbox'] {
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 }
-/* end of form success and error message animation - Animate.css */
 
-/* Fade-move Animation For Lightbox - Magnific Popup */
-/* at start */
+
 .my-mfp-slide-bottom .zoom-anim-dialog {
 	opacity: 0;
 	transition: all 0.2s ease-out;
@@ -483,8 +480,6 @@ input[type='checkbox'] {
 	-ms-transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
 	transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
 }
-
-/* animate in */
 .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
 	opacity: 1;
 	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0); 
@@ -492,7 +487,6 @@ input[type='checkbox'] {
 	transform: translateY(0) perspective(37.5rem) rotateX(0); 
 }
 
-/* animate out */
 .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
 	opacity: 0;
 	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
@@ -500,23 +494,18 @@ input[type='checkbox'] {
 	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
 }
 
-/* dark overlay, start state */
 .my-mfp-slide-bottom.mfp-bg {
 	opacity: 0;
 	transition: opacity 0.2s ease-out;
 }
 
-/* animate in */
 .my-mfp-slide-bottom.mfp-ready.mfp-bg {
 	opacity: 0.8;
 }
-/* animate out */
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
 	opacity: 0;
 }
-/* end of fade-move animation for lightbox - magnific popup */
 
-/* Fade Animation For Image Slider - Magnific Popup */
 @-webkit-keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -562,11 +551,11 @@ input[type='checkbox'] {
 	-webkit-animation: fadeOut 0.8s;
 	animation: fadeOut 0.8s;
 }
-/* end of fade animation for image slider - magnific popup */
+
 
 
 /*************************/
-/*     02. Preloader     */
+/*  02. Barra de Carga   */
 /*************************/
 .spinner-wrapper {
 	position: fixed;
@@ -580,11 +569,11 @@ input[type='checkbox'] {
 
 .spinner {
 	position: absolute;
-	top: 50%; /* centers the loading animation vertically one the screen */
-	left: 50%; /* centers the loading animation horizontally one the screen */
+	top: 50%; 
+	left: 50%; 
 	width: 3.75rem;
 	height: 1.25rem;
-	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */ 
+	margin: -0.625rem 0 0 -1.875rem;
 	text-align: center;
 }
 
@@ -627,7 +616,7 @@ input[type='checkbox'] {
 
 
 /**************************/
-/*     03. Navigation     */
+/*     03. Navegación     */
 /**************************/
 .navbar-custom {
 	padding-top: 0.375rem;
@@ -673,11 +662,10 @@ input[type='checkbox'] {
 	color: #efb810;
 }
 
-/* Dropdown Menu */
 .navbar-custom .dropdown:hover > .dropdown-menu {
-	display: block; /* this makes the dropdown menu stay open while hovering it */
+	display: block; 
 	min-width: auto;
-	animation: fadeDropdown 0.2s; /* required for the fade animation */
+	animation: fadeDropdown 0.2s;
 }
 
 @keyframes fadeDropdown {
@@ -690,7 +678,7 @@ input[type='checkbox'] {
     }
 }
 
-.navbar-custom .dropdown-toggle:focus { /* removes dropdown outline on focus  */
+.navbar-custom .dropdown-toggle:focus {
 	outline: 0;
 }
 
@@ -726,7 +714,6 @@ input[type='checkbox'] {
 	background-color: #b5bcc4;
 	opacity: 0.2;
 }
-/* end of dropdown menu */
 
 .navbar-custom .social-icons {
 	display: none;
@@ -791,7 +778,7 @@ input[type='checkbox'] {
 
 
 /*********************/
-/*     05. Intro     */
+/* 05. Introducción  */
 /*********************/
 .basic-1 {
 	padding-top: 6.5rem;
@@ -814,7 +801,6 @@ input[type='checkbox'] {
 	color: #484a46;
 }
 
-/* Hover Animation */
 .basic-1 .image-container {
 	overflow: hidden;
 	border-radius: 0.25rem;
@@ -831,11 +817,10 @@ input[type='checkbox'] {
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
 } 
-/* end of hover animation */
 
 
 /***************************/
-/*     06. Description     */
+/*     06. Descripción     */
 /***************************/
 .cards-1 {
 	padding-top: 3rem;
@@ -880,7 +865,7 @@ input[type='checkbox'] {
 }
 
 /*************************/
-/*     08. Details 1     */
+/*     08. Detalles 1    */
 /*************************/
 .accordion .area-1 {
 	height: 27rem;
@@ -962,7 +947,7 @@ input[type='checkbox'] {
 
 
 /*************************/
-/*     09. Details 2     */
+/*     09. Detalles 2    */
 /*************************/
 .tabs .tabs-container {
 	max-width: 90%;
@@ -1094,7 +1079,7 @@ input[type='checkbox'] {
 }
 
 /************************/
-/*     12. Galery     */
+/*     12. Galeria      */
 /************************/
 
 .img-fluid {
@@ -1153,13 +1138,13 @@ input[type='checkbox'] {
 	border-radius: 0.375rem;
 }
 
-/* Hover Animation */
+
 .filter .element-item {
 	position: relative;
 	float: left;
 	overflow: hidden;
 	width: 50%;
-	background-color: #000; /* to hide 1px white margin in IE */
+	background-color: #000;
 }
 
 .filter .element-item img {
@@ -1173,7 +1158,6 @@ input[type='checkbox'] {
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
 } 
-/* end of hover animation */
 
 .filter .element-item .element-item-overlay { 
 	position: absolute;
@@ -1200,7 +1184,7 @@ input[type='checkbox'] {
 
 
 /**********************************/
-/*     13. Project Lightboxes     */
+/*     13. Modal de Galeria       */
 /**********************************/
 .lightbox-basic {
 	position: relative;
@@ -1276,91 +1260,6 @@ input[type='checkbox'] {
 	height: 2.75rem;
 }
 
-
-/********************/
-/*     14. Team     */
-/********************/
-.basic-2 {
-	padding-top: 6.375rem;
-	padding-bottom: 3.375rem;
-	background-color: #fbfbfb;
-	text-align: center;
-}
-
-.basic-2 h2 {
-	margin-bottom: 0.75rem;
-}
-
-.basic-2 .team-member {
-	display: inline-block;
-	max-width: 13rem;
-	margin-right: 1.5rem;
-	margin-bottom: 3.5rem;
-	margin-left: 1.5rem;
-}
-
-/* Hover Animation */
-.basic-2 .image-wrapper {
-	overflow: hidden;
-	margin-bottom: 1.5rem;
-}
-
-.basic-2 .image-wrapper img {
-	margin: 0;
-	transition: all 0.3s;
-}
-
-.basic-2 .image-wrapper:hover img {
-	-moz-transform: scale(1.15);
-	-webkit-transform: scale(1.15);
-	transform: scale(1.15);
-} 
-/* end of hover animation */
-
-.basic-2 .team-member .p-large {
-	margin-bottom: 0.25rem;
-}
-
-.basic-2 .team-member .job-title {
-	margin-bottom: 0.75rem;
-	color: #484a46;
-	font: 700 1rem/1.375rem "Montserrat", sans-serif;
-}
-
-.basic-2 .fa-stack {
-	width: 1.75rem;
-	height: 1.75rem;
-	margin-right: 0.125rem;
-	margin-left: 0.125rem;
-}
-
-.basic-2 .fa-stack .hexagon {
-	position: absolute;
-	left: 0;
-	width: 1.75rem;
-	height: 1.75rem;
-	background: url('../images/hexagon-green.svg') center center no-repeat;
-	background-size: 1.75rem 1.75rem;
-	transition: all 0.2s ease;
-}
-
-.basic-2 .fa-stack:hover .hexagon {
-	background: url('../images/hexagon-white.svg') center center no-repeat;
-	background-size: 1.75rem 1.75rem;
-}
-
-.basic-2 .fa-stack-1x {
-	font-size: 0.6875rem;
-	line-height: 1.75rem;
-	color: #fff;
-	transition: all 0.2s ease;
-}
-
-.basic-2 .fa-stack:hover .fa-stack-1x {
-	color: #efb810;
-}
-
-
 /*********************/
 /*     15. About     */
 /*********************/
@@ -1427,7 +1326,7 @@ input[type='checkbox'] {
 
 
 /***********************/
-/*     16. Contact     */
+/*     16. Contacto    */
 /***********************/
 .form-2 {
 	padding-top: 6.625rem;
@@ -1544,7 +1443,7 @@ input[type='checkbox'] {
 
 
 /**********************************/
-/*     19. Back To Top Button     */
+/*    19. Boton Regreso al Inicio */
 /**********************************/
 a.back-to-top {
 	position: fixed;
@@ -1631,9 +1530,8 @@ a:hover.back-to-top {
 
 
 /*****************************/
-/*     21. Media Queries     */
+/*     21. Queries     */
 /*****************************/	
-/* Min-width width 768px */
 @media (min-width: 768px) {
 	
 	/* General Styles */
@@ -1644,7 +1542,6 @@ a:hover.back-to-top {
 		color: #efb810;
 		font: 700 2.5rem/3rem "Montserrat", sans-serif;
 	}
-	/* end of general styles */
 
 
 	/* Navigation */
@@ -1749,22 +1646,6 @@ a:hover.back-to-top {
 	}
 	/* end of details 2 */
 
-
-	/* Testimonials */
-	.slider .swiper-button-prev {
-		left: 1rem;
-		width: 1.375rem;
-		background-size: 1.375rem 2.125rem;
-	}
-	
-	.slider .swiper-button-next {
-		right: 1rem;
-		width: 1.375rem;
-		background-size: 1.375rem 2.125rem;
-	}
-	/* end of testimonials */
-
-
 	/* Projects */
 	.filter .element-item { 
 		width: 25%; 
@@ -1801,23 +1682,9 @@ a:hover.back-to-top {
 		display: block;
 	}
 	/* end of contact */
-
-
-	/* Extra Pages */
-	.ex-header {
-		padding-top: 11rem;
-		padding-bottom: 9rem;
-	}
-
-	.ex-basic-2 .form-container {
-		margin-top: 0.5rem;
-	}
-	/* end of extra pages */
 }
 /* end of min-width width 768px */
 
-
-/* Min-width width 992px */
 @media (min-width: 992px) {
 	
 	/* General Styles */
@@ -1977,18 +1844,6 @@ a:hover.back-to-top {
 	}
 	/* end of details 2 */
 
-
-	/* Call Me */
-	.form-1 {
-		padding-top: 7rem;	
-	}
-
-	.form-1 .text-container {
-		margin-bottom: 0;
-	}
-	/* end of call me */
-
-
 	/* Project Lightboxes */
 	.lightbox-basic img {
 		margin-bottom: 0;
@@ -2003,17 +1858,6 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 	}
 	/* end of project lightboxes */
-
-
-	/* Team */
-	.basic-2 .team-member {
-		width: 12.75rem;
-		max-width: 100%;
-		margin-right: 0.75rem;
-		margin-left: 0.75rem;
-	}
-	/* end of team */
-
 
 	/* About */
 	.counter .image-container {
@@ -2135,14 +1979,6 @@ a:hover.back-to-top {
 	}
 	/* end of details 2 */
 
-
-	/* Call Me */
-	.form-1 .text-container {
-		margin-top: 1.375rem;
-		margin-right: 1.75rem;
-		margin-left: 3rem
-	}
-
 	.form-1 form {
 		margin-left: 1.75rem;
 		margin-right: 3rem
@@ -2160,16 +1996,6 @@ a:hover.back-to-top {
 		top: 45%;
 	}
 	/* end of projects */
-
-
-	/* Team */
-	.basic-2 .team-member {
-		width: 14.375rem;
-		margin-right: 1.375rem;
-		margin-left: 1.375rem;
-	}
-	/* end of team */
-
 
 	/* About */
 	.counter {
@@ -2205,19 +2031,6 @@ a:hover.back-to-top {
 		margin-right: 5rem;
 	}
 	/* end of footer */
-
-
-	/* Extra Pages */
-	.ex-header h1 {
-		width: 60%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.ex-basic-2 .form-container {
-		margin-left: 1.75rem;
-	}
-	/* end of extra pages */
 }
 /* end of min-width width 1200px */
 
